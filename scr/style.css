@@ -46,6 +46,12 @@ a {
     font-weight: 500;
 }
 
+.title {
+    color: var(--blue);
+    font-size: 32px;
+    font-weight: 500;
+}
+
 /*Header
 ----------------------------*/
 .header {
@@ -125,6 +131,75 @@ a {
 
 .banner-button {
     margin-top: 50px;
+}
+
+/*Events
+----------------------------*/
+
+.events {
+    background-color: var(--gray);
+}
+
+.events-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.events-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.events-item-image {
+    width: 30%;
+    position: relative;
+}
+
+.events-item-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.events-item {
+    display: flex;
+}
+
+.events-item-content {
+    background-color: var(--white);
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.events-item-title {
+    font-size: 24px;
+    color: var(--darkgray);
+}
+
+.events-item-content-info {
+    margin-top: 40px;
+    border-top: solid 1px var(--darkgray);
+}
+
+.events-item-content-info {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.events-item-date {
+    color: var(--blue);
+}
+
+.evets-item-location {
+    color: var(--darkgray);
 }
 
 /*Responsividade
