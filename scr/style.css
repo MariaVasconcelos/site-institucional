@@ -145,6 +145,7 @@ a {
 
 /*Mobile - Header
 ----------------------------*/
+
 .container-mobile-header {
     position: fixed;
     left: 0;
@@ -156,29 +157,16 @@ a {
     display: flex;
     flex-direction: column;
     padding: 20px;
+    
 }
 
 .mobile-header {
-    display: flex;
-    justify-content: space-between;
+    
 }
 
 .button-mobile-header {
-    display: none; 
-    border: none;
-    background: none;
-    border-top: 3px solid var(--white);
+    /*display: none;*/
     cursor: pointer;
-}
-
-.button-mobile-header::before, 
-.button-mobile-header::before {
-    content: " ";
-    display: block;
-    width: 30px;
-    height: 3px;
-    background-color: var(--white);
-    margin-top: 5px;
 }
 
 .mobile-menu-links {
@@ -399,24 +387,10 @@ a {
     .container {
         max-width: 920px;
     }
-    /*Button - Mobile - Header*/
     .button-mobile-header {
         display: block;
     }
 
-    /*Menu - Mobile - Header*//*
-    .container-mobile-header {
-        position: fixed;
-        left: 0;
-        top: 0;
-        height: 100vh;
-        width: 100vw;
-        background-color: var(--blue);
-        z-index: 999;
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-    }*/
 }
 
 @media(max-width: 920px){
@@ -483,6 +457,13 @@ a {
 
 @media(min-width: 920px){
     .header-mobile {
+        display: none;
+    }
+}
+
+@media(min-width: 920px){
+    /*Button - Mobile - Header*/
+    .button-mobile-header {
         display: none;
     }
 }
